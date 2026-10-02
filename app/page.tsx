@@ -2,7 +2,7 @@ import {
   ArrowUpRight,
   Check,
   ChevronDown,
-  LineChart,
+  ClipboardCheck,
   Mail,
   Sparkles,
   Server,
@@ -26,10 +26,10 @@ const services = [
   },
   {
     number: '03',
-    icon: LineChart,
-    title: 'Marketing-Tech & Hosting',
-    description: 'Performante Infrastruktur trifft auf datengetriebene Marketing-Prozesse.',
-    items: ['Lead-Routing & CRM-Sync', 'Tracking & Data Pipelines', 'High-Speed Hosting (Coolify/VPS)'],
+    icon: ClipboardCheck,
+    title: 'Digitalisierung & Prozessanalyse',
+    description: 'Bestehende Abläufe prüfen, Potenziale erkennen und digitale Lösungen entwickeln, die im Alltag wirklich entlasten.',
+    items: ['Digitale Potenzial- & Prozessaudits', 'Strukturen für Daten & Dokumente', 'Individuelle Systeme statt Insellösungen'],
   },
 ]
 
