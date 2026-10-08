@@ -39,7 +39,7 @@ function OptionalSections() {
   return (
     <>
       <section className="use-cases-section container" aria-labelledby="use-cases-heading">
-        <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Weniger Aufwand für <span className="gradient-text">mehr Wirkung.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
+        <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Digitalisierung im Arbeitsalltag: <span className="gradient-text">konkrete Anwendungsfälle.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
         <div className="use-cases-grid">
           <article className="use-case"><span>01</span><h3>Intelligente E-Mail-Sortierung</h3><p><strong>Problem:</strong> Überlaufendes Postfach, lange Antwortzeiten.</p><p><strong>Lösung:</strong> KI kategorisiert Mails, priorisiert sie und erstellt direkt passende Antwortentwürfe.</p></article>
           <article className="use-case"><span>02</span><h3>Automatisiertes Lead-Routing</h3><p><strong>Problem:</strong> Manuelle CRM-Pflege und verzögerter Vertriebskontakt.</p><p><strong>Lösung:</strong> Web-Leads werden automatisch im CRM angelegt und der Vertrieb sofort in Teams oder Slack informiert.</p></article>
