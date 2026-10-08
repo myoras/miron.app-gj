@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'miron.app — Digitalisierung, Automatisierung & KI',
-  description: 'Smarte Automatisierung und KI für dein Business. Miron unterstützt Unternehmen aus Leipzig bei der digitalen Transformation.',
+  title: 'miron.app, Digitalisierung, Automatisierung und KI',
+  description: 'Automatisierung und KI, die Unternehmen aus Leipzig Zeit sparen und digitale Abläufe vereinfachen.',
   generator: 'v0.app',
   icons: {
     icon: [
