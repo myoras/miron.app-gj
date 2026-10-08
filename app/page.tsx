@@ -16,24 +16,24 @@ const showWorkflowDemo = true
 const services = [
   {
     number: '01',
-    icon: Sparkles,
-    title: 'KI-Integration',
-    description: 'Künstliche Intelligenz dort einsetzen, wo sie Zeit spart, Abläufe beschleunigt und echten Mehrwert schafft.',
-    items: ['Chatbots & KI-Assistenten', 'Dokumenten- & Datenauswertung', 'Lokale LLMs & Datenschutz'],
+    icon: ClipboardCheck,
+    title: 'Digitalisierung',
+    description: 'Digitale Lösungen für Daten, Dokumente und Abläufe entwickeln, damit dein Unternehmen übersichtlicher und effizienter arbeitet.',
+    items: ['Digitale Potenzialanalysen', 'Strukturen für Daten & Dokumente', 'Individuelle Systeme statt Insellösungen'],
   },
   {
     number: '02',
     icon: Workflow,
-    title: 'Prozess-Automatisierung',
-    description: 'Wiederkehrende Aufgaben automatisieren und deine Tools nahtlos miteinander verbinden.',
-    items: ['Komplexe n8n-Workflows', 'Intelligente Postfach-Automatisierung', 'API- & Tool-Integrationen'],
+    title: 'Prozessautomatisierung',
+    description: 'Wiederkehrende Aufgaben automatisieren und bestehende Systeme verbinden, damit dein Team Zeit spart und weniger manuell arbeiten muss.',
+    items: ['Automatisierte Geschäftsprozesse', 'Intelligente Postfachverarbeitung', 'API und Tool Integrationen'],
   },
   {
     number: '03',
-    icon: ClipboardCheck,
-    title: 'Digitalisierung & Prozessanalyse',
-    description: 'Bestehende Abläufe prüfen, Potenziale erkennen und digitale Lösungen entwickeln, die im Alltag wirklich entlasten.',
-    items: ['Digitale Potenzial- & Prozessaudits', 'Strukturen für Daten & Dokumente', 'Individuelle Systeme statt Insellösungen'],
+    icon: Sparkles,
+    title: 'KI Integration',
+    description: 'Künstliche Intelligenz sinnvoll in deine Arbeitsabläufe integrieren, um Informationen schneller zu verarbeiten und bessere Entscheidungen zu ermöglichen.',
+    items: ['KI Assistenten und Chatbots', 'Dokumenten und Datenauswertung', 'Datenschutzbewusste KI Lösungen'],
   },
 ]
 
@@ -95,7 +95,7 @@ export default function Page() {
       </section>
 
       <section id="leistungen" className="section container">
-        <div className="section-heading"><div><p className="section-kicker">Was ich mache</p><h2>Technologie, die <span className="gradient-text">weiterdenkt.</span></h2></div><p className="section-intro">Von der ersten Idee bis zum laufenden System: Ich entwickle Lösungen, die wiederkehrende Arbeit abnehmen, Zeit sparen und Raum für wichtigere Aufgaben schaffen.</p></div>
+        <div className="section-heading"><div><p className="section-kicker">Was ich mache</p><h2>Digitale Lösungen, die <span className="gradient-text">Zeit sparen.</span></h2></div><p className="section-intro">Mit einer klaren Prozessanalyse erkenne ich, wo Abläufe Zeit kosten und Potenzial verschenken. Daraus entstehen digitale Lösungen, die wiederkehrende Arbeit abnehmen und Raum für wichtigere Aufgaben schaffen.</p></div>
         <div className="service-grid">
           {services.map(({ number, icon: Icon, title, description, items }) => (
             <article className="service-card" key={title}>
