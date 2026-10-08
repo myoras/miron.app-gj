@@ -1,7 +1,6 @@
 import {
   ArrowUpRight,
   Check,
-  ChevronDown,
   ClipboardCheck,
   Mail,
   Sparkles,
@@ -9,8 +8,6 @@ import {
   Workflow,
 } from 'lucide-react'
 
-const showCertificates = true
-const showReferences = true
 const showWorkflowDemo = true
 
 const services = [
@@ -40,21 +37,18 @@ const services = [
 function OptionalSections() {
   return (
     <>
-      {showCertificates && (
-        <section className="proof-section container" aria-labelledby="zertifikate-heading">
-          <div className="section-heading"><div><p className="section-kicker">Qualifikation</p><h2 id="zertifikate-heading">Zertifikate, die <span className="gradient-text">Vertrauen schaffen.</span></h2></div><p className="section-intro">Zeige hier relevante Zertifikate und Qualifikationen, die deine fachliche Kompetenz in Digitalisierung, Automatisierung und KI-Integration unterstreichen.</p></div>
-          <div className="media-slots certificates-slots"><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div></div>
-        </section>
-      )}
-      {showReferences && (
-        <section className="references-section" aria-labelledby="referenzen-heading">
-          <div className="container"><div className="section-heading"><div><p className="section-kicker">Referenzen</p><h2 id="referenzen-heading">Ergebnisse, die <span className="gradient-text">für sich sprechen.</span></h2></div><p className="section-intro">Hier kannst du Referenzkunden und ausgewählte Projekte zeigen. So erhalten interessierte Unternehmen einen schnellen Eindruck von deiner Erfahrung und Arbeitsweise.</p></div><div className="reference-slots"><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div></div></div>
-        </section>
-      )}
+      <section className="use-cases-section container" aria-labelledby="use-cases-heading">
+        <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Weniger Aufwand für <span className="gradient-text">mehr Wirkung.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
+        <div className="use-cases-grid">
+          <article className="use-case"><span>01</span><h3>Intelligente E-Mail-Verarbeitung</h3><p>Eingehende Anfragen automatisch erkennen, sortieren und an die richtige Stelle weiterleiten, damit keine Information liegen bleibt.</p></article>
+          <article className="use-case"><span>02</span><h3>Automatisierte Dokumentenprüfung</h3><p>Dokumente strukturiert auslesen, wichtige Inhalte prüfen und Daten ohne manuelle Übertragung in bestehende Systeme übernehmen.</p></article>
+          <article className="use-case"><span>03</span><h3>Digitale Abläufe im Team</h3><p>Wiederkehrende Aufgaben verbinden und übersichtlich abbilden, damit Mitarbeitende weniger suchen und schneller handeln.</p></article>
+        </div>
+      </section>
       {showWorkflowDemo && (
         <section className="demo-section container" aria-labelledby="demo-heading">
           <div className="section-heading"><div><p className="section-kicker">Live-Demonstration</p><h2 id="demo-heading">Automatisierung <span className="gradient-text">in Aktion.</span></h2></div><p className="section-intro">Erlebe hier beispielhaft, wie ein digitaler Arbeitsablauf durch Prozessautomatisierung einfacher, schneller und zuverlässiger werden kann.</p></div>
-          <div className="demo-frame"><div className="demo-placeholder"><Workflow size={28} strokeWidth={1.2} /><strong>Demo hier einfügen</strong><span>Ersetze diesen Bereich durch einen iframe oder ein Video.</span></div></div>
+          <div className="demo-frame"><div className="demo-placeholder"><Workflow size={28} strokeWidth={1.2} /><strong>Live-Demo hier einfügen</strong><span>Ersetze diesen Bereich durch ein eingebettetes Video oder einen interaktiven iframe.</span></div></div>
         </section>
       )}
     </>
@@ -80,8 +74,8 @@ export default function Page() {
           <h1>Digitalisierung und Automatisierung, die <span className="gradient-text">Zeit spart.</span></h1>
           <p className="hero-lead">Ich bin Miron und unterstütze Unternehmen aus Leipzig und darüber hinaus bei der Digitalisierung. Ich entwickle klare digitale Prozesse, die Zeit sparen, manuelle Arbeit reduzieren und Raum für wichtige Aufgaben schaffen.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="mailto:hello@miron.app">Termin vereinbaren <ArrowUpRight size={17} /></a>
-            <a className="button button-ghost" href="#leistungen">Meine Leistungen <ChevronDown size={16} /></a>
+            <a className="button button-primary" data-cal-link="dein-cal-link" href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a>
+            <a className="button button-ghost" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={16} /></a>
           </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
@@ -116,7 +110,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><a className="button button-primary" href="mailto:hello@miron.app"><Mail size={17} /> E-Mail schreiben</a><a className="button button-outline" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn öffnen <ArrowUpRight size={17} /></a></div></section>
+      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><a className="button button-primary" data-cal-link="dein-cal-link" href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a><a className="button button-outline" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={17} /></a></div></section>
 
       <footer className="footer container"><a href="#top" className="wordmark">miron<span>.app</span></a><span>© 2026 miron.app, Leipzig</span><a href="mailto:hello@miron.app">hello@miron.app</a></footer>
     </main>
