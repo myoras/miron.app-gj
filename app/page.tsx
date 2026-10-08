@@ -9,6 +9,10 @@ import {
   Workflow,
 } from 'lucide-react'
 
+const showCertificates = true
+const showReferences = true
+const showWorkflowDemo = true
+
 const services = [
   {
     number: '01',
@@ -33,6 +37,30 @@ const services = [
   },
 ]
 
+function OptionalSections() {
+  return (
+    <>
+      {showCertificates && (
+        <section className="proof-section container" aria-labelledby="zertifikate-heading">
+          <div className="section-heading"><div><p className="section-kicker">Qualifikation</p><h2 id="zertifikate-heading">Zertifikate, die <span className="gradient-text">Vertrauen schaffen.</span></h2></div><p className="section-intro">Hier kannst du deine relevanten Zertifikate sichtbar machen und deine fachliche Grundlage zeigen.</p></div>
+          <div className="media-slots certificates-slots"><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div><div className="media-slot"><span>+ Zertifikat hinzufügen</span><small>Bild in public einfügen und diesen Platzhalter ersetzen</small></div></div>
+        </section>
+      )}
+      {showReferences && (
+        <section className="references-section" aria-labelledby="referenzen-heading">
+          <div className="container"><div className="section-heading"><div><p className="section-kicker">Referenzen</p><h2 id="referenzen-heading">Ergebnisse, die <span className="gradient-text">für sich sprechen.</span></h2></div><p className="section-intro">Logos oder Bilder deiner Referenzkunden kannst du hier unkompliziert ergänzen.</p></div><div className="reference-slots"><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div><div className="reference-slot">Logo oder Bild</div></div></div>
+        </section>
+      )}
+      {showWorkflowDemo && (
+        <section className="demo-section container" aria-labelledby="demo-heading">
+          <div className="section-heading"><div><p className="section-kicker">Live-Demonstration</p><h2 id="demo-heading">Automatisierung <span className="gradient-text">in Aktion.</span></h2></div><p className="section-intro">Zeige hier einen echten Arbeitsablauf als interaktive Anwendung oder Video.</p></div>
+          <div className="demo-frame"><div className="demo-placeholder"><Workflow size={28} strokeWidth={1.2} /><strong>Demo hier einfügen</strong><span>Ersetze diesen Bereich durch einen iframe oder ein Video.</span></div></div>
+        </section>
+      )}
+    </>
+  )
+}
+
 export default function Page() {
   return (
     <main className="site-shell">
@@ -49,7 +77,7 @@ export default function Page() {
       <section id="top" className="hero container">
         <div className="hero-copy">
           <div className="eyebrow"><span className="status-dot" /> Digitalisierung · Automatisierung · KI</div>
-          <h1>Automatisierung, die <span className="gradient-text">Zeit schafft.</span></h1>
+          <h1>Digitale Prozesse, die <span className="gradient-text">Zeit sparen.</span></h1>
           <p className="hero-lead">Ich bin Miron, Freelancer für Digitalisierung aus Leipzig. Ich entwickle klare digitale Abläufe, die Unternehmen Zeit sparen, manuelle Arbeit reduzieren und Raum für das Wesentliche schaffen.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:hello@miron.app">Termin vereinbaren <ArrowUpRight size={17} /></a>
@@ -79,6 +107,8 @@ export default function Page() {
         </div>
       </section>
 
+      <OptionalSections />
+
       <section className="about-section">
         <div className="about container">
           <div className="portrait-wrap"><img src="/placeholder-user.jpg" alt="Porträt-Platzhalter für Miron" /><div className="portrait-caption"><span className="status-dot" /> aus Leipzig, Deutschland</div></div>
@@ -86,7 +116,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo intelligente Automatisierung spürbar entlasten kann.</p><div className="cta-actions"><a className="button button-primary" href="mailto:hello@miron.app"><Mail size={17} /> E-Mail schreiben</a><a className="button button-outline" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn Profil <ArrowUpRight size={17} /></a></div></section>
+      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo intelligente Automatisierung spürbar entlasten kann.</p><div className="cta-actions"><a className="button button-primary" href="mailto:hello@miron.app"><Mail size={17} /> E-Mail schreiben</a><a className="button button-outline" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn öffnen <ArrowUpRight size={17} /></a></div></section>
 
       <footer className="footer container"><a href="#top" className="wordmark">miron<span>.app</span></a><span>© 2026 miron.app, Leipzig</span><a href="mailto:hello@miron.app">hello@miron.app</a></footer>
     </main>
