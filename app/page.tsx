@@ -38,6 +38,12 @@ const services = [
 function OptionalSections() {
   return (
     <>
+      {showWorkflowDemo && (
+        <section className="demo-section container" aria-labelledby="demo-heading">
+          <div className="section-heading"><div><p className="section-kicker">Live-Demonstration</p><h2 id="demo-heading">Automatisierung <span className="gradient-text">in Aktion.</span></h2></div><p className="section-intro">Erlebe hier beispielhaft, wie ein digitaler Arbeitsablauf durch Prozessautomatisierung einfacher, schneller und zuverlässiger werden kann.</p></div>
+          <div className="demo-frame"><div className="demo-placeholder"><Workflow size={28} strokeWidth={1.2} /><strong>Live-Demo hier einfügen</strong><span>Ersetze diesen Bereich durch ein eingebettetes Video oder einen interaktiven iframe.</span></div></div>
+        </section>
+      )}
       <section className="use-cases-section container" aria-labelledby="use-cases-heading">
         <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Digitalisierung für <span className="gradient-text">effizientere Arbeitsabläufe.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
         <div className="use-cases-grid">
@@ -49,12 +55,6 @@ function OptionalSections() {
           <article className="use-case"><span>06</span><h3>Proaktives System-Monitoring</h3><p><strong>Problem:</strong> Unbemerkte Fehler bei Zahlungen oder Fristen.</p><p><strong>Lösung:</strong> Automatische Überwachung mit Echtzeit-Alerts an das zuständige Team bei Abweichungen.</p></article>
         </div>
       </section>
-      {showWorkflowDemo && (
-        <section className="demo-section container" aria-labelledby="demo-heading">
-          <div className="section-heading"><div><p className="section-kicker">Live-Demonstration</p><h2 id="demo-heading">Automatisierung <span className="gradient-text">in Aktion.</span></h2></div><p className="section-intro">Erlebe hier beispielhaft, wie ein digitaler Arbeitsablauf durch Prozessautomatisierung einfacher, schneller und zuverlässiger werden kann.</p></div>
-          <div className="demo-frame"><div className="demo-placeholder"><Workflow size={28} strokeWidth={1.2} /><strong>Live-Demo hier einfügen</strong><span>Ersetze diesen Bereich durch ein eingebettetes Video oder einen interaktiven iframe.</span></div></div>
-        </section>
-      )}
     </>
   )
 }
