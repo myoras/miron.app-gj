@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'miron.app, Digitalisierung, Automatisierung und KI',
-  description: 'Automatisierung und KI, die Unternehmen aus Leipzig Zeit sparen und digitale Abläufe vereinfachen.',
+  description: 'Digitalisierung, Prozessautomatisierung und KI-Integration für Unternehmen aus Leipzig. Digitale Prozesse, die Zeit sparen, Abläufe vereinfachen und Teams entlasten.',
   generator: 'v0.app',
   icons: {
     icon: [
