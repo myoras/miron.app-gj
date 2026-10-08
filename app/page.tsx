@@ -39,7 +39,7 @@ function OptionalSections() {
   return (
     <>
       <section className="use-cases-section container" aria-labelledby="use-cases-heading">
-        <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Weniger Aufwand für <span className="gradient-text">mehr Wirkung.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
+        <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Digitalisierung für <span className="gradient-text">effizientere Arbeitsabläufe.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
         <div className="use-cases-grid">
           <article className="use-case"><span>01</span><h3>Intelligente E-Mail-Sortierung</h3><p><strong>Problem:</strong> Überlaufendes Postfach, lange Antwortzeiten.</p><p><strong>Lösung:</strong> KI kategorisiert Mails, priorisiert sie und erstellt direkt passende Antwortentwürfe.</p></article>
           <article className="use-case"><span>02</span><h3>Automatisiertes Lead-Routing</h3><p><strong>Problem:</strong> Manuelle CRM-Pflege und verzögerter Vertriebskontakt.</p><p><strong>Lösung:</strong> Web-Leads werden automatisch im CRM angelegt und der Vertrieb sofort in Teams oder Slack informiert.</p></article>
@@ -78,7 +78,7 @@ export default function Page() {
           <h1>Digitalisierung und Automatisierung, die <span className="gradient-text">Zeit spart.</span></h1>
           <p className="hero-lead">Ich bin Miron und unterstütze Unternehmen aus Leipzig und darüber hinaus bei der Digitalisierung. Ich entwickle klare digitale Prozesse, die Zeit sparen, manuelle Arbeit reduzieren und Raum für wichtige Aufgaben schaffen.</p>
           <div className="hero-actions">
-            <a className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a>
+            <button type="button" className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'>Termin buchen <ArrowUpRight size={17} /></button>
             <a className="button button-ghost" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={16} /></a>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><a className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a><a className="button button-outline" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={17} /></a></div></section>
+      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><button type="button" className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'>Termin buchen <ArrowUpRight size={17} /></button><a className="button button-outline" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={17} /></a></div></section>
 
       <footer className="footer container"><a href="#top" className="wordmark">miron<span>.app</span></a><span>© 2026 miron.app, Leipzig</span><a href="mailto:hello@miron.app">hello@miron.app</a></footer>
 
@@ -123,7 +123,7 @@ export default function Page() {
 Cal("init", "kennlerngesprach", { origin: "https://app.cal.com" });
 Cal.config = Cal.config || {};
 Cal.config.forwardQueryParams = true;
-Cal.ns.kennlerngesprach("ui", { "hideEventTypeDetails": false, "layout": "month_view" });`}
+Cal.ns.kennlerngesprach("ui", { "hideEventTypeDetails": false, "layout": "month_view", "theme": "dark" });`}
       </Script>
     </main>
   )
