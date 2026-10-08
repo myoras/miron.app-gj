@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import {
   ArrowUpRight,
   Check,
@@ -77,7 +78,7 @@ export default function Page() {
           <h1>Digitalisierung und Automatisierung, die <span className="gradient-text">Zeit spart.</span></h1>
           <p className="hero-lead">Ich bin Miron und unterstütze Unternehmen aus Leipzig und darüber hinaus bei der Digitalisierung. Ich entwickle klare digitale Prozesse, die Zeit sparen, manuelle Arbeit reduzieren und Raum für wichtige Aufgaben schaffen.</p>
           <div className="hero-actions">
-            <a className="button button-primary" data-cal-link="dein-cal-link" href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a>
+            <a className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a>
             <a className="button button-ghost" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={16} /></a>
           </div>
         </div>
@@ -113,11 +114,17 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><a className="button button-primary" data-cal-link="dein-cal-link" href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a><a className="button button-outline" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={17} /></a></div></section>
+      <section id="kontakt" className="cta-section container"><div className="cta-glow" aria-hidden="true" /><p className="section-kicker">Nächster Schritt</p><h2>Lass uns über deine<br /><span className="gradient-text">Prozesse sprechen.</span></h2><p>Welche Aufgaben kosten dein Unternehmen heute unnötig Zeit? Lass uns gemeinsam herausfinden, wo Digitalisierung und intelligente Automatisierung deine Abläufe spürbar verbessern können.</p><div className="cta-actions"><a className="button button-primary" data-cal-link="miron.app/kennlerngesprach" data-cal-namespace="kennlerngesprach" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' href="#kontakt">Termin buchen <ArrowUpRight size={17} /></a><a className="button button-outline" href="mailto:hello@miron.app">Kontakt aufnehmen <Mail size={17} /></a></div></section>
 
       <footer className="footer container"><a href="#top" className="wordmark">miron<span>.app</span></a><span>© 2026 miron.app, Leipzig</span><a href="mailto:hello@miron.app">hello@miron.app</a></footer>
+
+      <Script id="cal-embed" strategy="afterInteractive">
+        {`(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "kennlerngesprach", { origin: "https://app.cal.com" });
+Cal.config = Cal.config || {};
+Cal.config.forwardQueryParams = true;
+Cal.ns.kennlerngesprach("ui", { "hideEventTypeDetails": false, "layout": "month_view" });`}
+      </Script>
     </main>
   )
 }
-
-  
