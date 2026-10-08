@@ -108,7 +108,7 @@ export default function Page() {
 
       <section className="about-section">
         <div className="about container">
-          <div className="portrait-wrap"><img src="/placeholder-user.jpg" alt="Porträt-Platzhalter für Miron" /><div className="portrait-caption"><span className="status-dot" /> aus Leipzig, Deutschland</div></div>
+          <div className="portrait-wrap"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Portrait%20von%20Miron%20-%20Digitalisierung%20und%20Automatisierung%20in%20Leipzig-59QZ2oNkqRbSOORIltO12ZiAdz5WXm.jpg" alt="Schwarzweiß-Porträt von Miron aus Leipzig" /><div className="portrait-caption"><span className="status-dot" /> aus Leipzig, Deutschland</div></div>
           <div className="about-copy"><p className="section-kicker">Über mich</p><h2>Technisches Wissen mit Blick <span className="gradient-text">für das Ganze.</span></h2><p>Ich bin Miron und unterstütze Unternehmen von Leipzig aus dabei, digitale Prozesse zu vereinfachen und effizienter zu arbeiten.</p><p>Durch meine Erfahrung im Online-Marketing und in der Fotografie verbinde ich technisches Verständnis mit einem klaren Blick für Nutzer und Geschäftsziele. Jede Lösung soll messbar entlasten, datenschutzkonform im Alltag funktionieren und langfristig einen echten Mehrwert schaffen.</p><a href="#kontakt" className="text-link">Mehr über meine Arbeitsweise <ArrowUpRight size={16} /></a></div>
         </div>
       </section>
