@@ -18,21 +18,21 @@ const services = [
     number: '01',
     icon: ClipboardCheck,
     title: 'Digitalisierung',
-    description: 'Digitale Abläufe und Systeme entwickeln, die Informationen besser nutzbar machen und deinem Unternehmen mehr Übersicht und Effizienz geben.',
+    description: 'Digitale Abläufe und Systeme entwickeln, die Informationen besser nutzbar machen und deinem Unternehmen mehr Übersicht und Effizienz geben. Dabei achte ich auf eine datenschutzkonforme Umsetzung.',
     items: ['Digitale Potenzialanalyse', 'Daten und Dokumente strukturieren', 'Individuelle Lösungen statt Insellösungen'],
   },
   {
     number: '02',
     icon: Workflow,
     title: 'Prozessautomatisierung',
-    description: 'Wiederkehrende Geschäftsprozesse automatisieren und bestehende Systeme verbinden, damit dein Team Zeit spart und sich auf wichtige Aufgaben konzentriert.',
+    description: 'Wiederkehrende Geschäftsprozesse automatisieren und bestehende Systeme verbinden, damit dein Team Zeit spart und sich auf wichtige Aufgaben konzentriert. Die Lösungen werden datenschutzkonform geplant und umgesetzt.',
     items: ['Automatisierte Geschäftsprozesse', 'Intelligente E-Mail-Verarbeitung', 'Schnittstellen und Systemverbindungen'],
   },
   {
     number: '03',
     icon: Sparkles,
     title: 'KI-Integration',
-    description: 'Künstliche Intelligenz sicher in bestehende Arbeitsabläufe integrieren, damit Informationen schneller verarbeitet und Entscheidungen fundierter getroffen werden.',
+    description: 'Künstliche Intelligenz sicher und datenschutzkonform in bestehende Arbeitsabläufe integrieren, damit Informationen schneller verarbeitet und Entscheidungen fundierter getroffen werden.',
     items: ['KI-Assistenten für den Arbeitsalltag', 'Auswertung von Dokumenten und Daten', 'Datenschutzbewusste KI-Lösungen'],
   },
 ]
@@ -95,7 +95,7 @@ export default function Page() {
       </section>
 
       <section id="leistungen" className="section container">
-        <div className="section-heading"><div><p className="section-kicker">Leistungen</p><h2>Digitale Lösungen für <span className="gradient-text">effizientere Abläufe.</span></h2></div><p className="section-intro">Mit einer strukturierten Prozessanalyse erkenne ich, wo Abläufe Zeit kosten, Fehler entstehen und Potenzial ungenutzt bleibt. Daraus entwickle ich passende Lösungen für Digitalisierung, Prozessautomatisierung und die sichere Integration künstlicher Intelligenz.</p></div>
+        <div className="section-heading"><div><p className="section-kicker">Leistungen</p><h2>Digitale Lösungen für <span className="gradient-text">effizientere Abläufe.</span></h2></div><p className="section-intro">Mit einer strukturierten Prozessanalyse erkenne ich, wo Abläufe Zeit kosten, Fehler entstehen und Potenzial ungenutzt bleibt. Daraus entwickle ich passende und datenschutzkonforme Lösungen für Digitalisierung, Prozessautomatisierung und die sichere Integration künstlicher Intelligenz.</p></div>
         <div className="service-grid">
           {services.map(({ number, icon: Icon, title, description, items }) => (
             <article className="service-card" key={title}>
@@ -112,7 +112,7 @@ export default function Page() {
       <section className="about-section">
         <div className="about container">
           <div className="portrait-wrap"><img src="/placeholder-user.jpg" alt="Porträt-Platzhalter für Miron" /><div className="portrait-caption"><span className="status-dot" /> aus Leipzig, Deutschland</div></div>
-          <div className="about-copy"><p className="section-kicker">Über mich</p><h2>Technisches Wissen mit Blick <span className="gradient-text">für das Ganze.</span></h2><p>Ich bin Miron und unterstütze Unternehmen von Leipzig aus dabei, digitale Prozesse zu vereinfachen und effizienter zu arbeiten.</p><p>Durch meine Erfahrung im Online-Marketing und in der Fotografie verbinde ich technisches Verständnis mit einem klaren Blick für Nutzer und Geschäftsziele. Jede Lösung soll messbar entlasten, im Alltag funktionieren und langfristig einen echten Mehrwert schaffen.</p><a href="#kontakt" className="text-link">Mehr über meine Arbeitsweise <ArrowUpRight size={16} /></a></div>
+          <div className="about-copy"><p className="section-kicker">Über mich</p><h2>Technisches Wissen mit Blick <span className="gradient-text">für das Ganze.</span></h2><p>Ich bin Miron und unterstütze Unternehmen von Leipzig aus dabei, digitale Prozesse zu vereinfachen und effizienter zu arbeiten.</p><p>Durch meine Erfahrung im Online-Marketing und in der Fotografie verbinde ich technisches Verständnis mit einem klaren Blick für Nutzer und Geschäftsziele. Jede Lösung soll messbar entlasten, datenschutzkonform im Alltag funktionieren und langfristig einen echten Mehrwert schaffen.</p><a href="#kontakt" className="text-link">Mehr über meine Arbeitsweise <ArrowUpRight size={16} /></a></div>
         </div>
       </section>
 
