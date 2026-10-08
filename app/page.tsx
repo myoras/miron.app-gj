@@ -40,9 +40,12 @@ function OptionalSections() {
       <section className="use-cases-section container" aria-labelledby="use-cases-heading">
         <div className="section-heading"><div><p className="section-kicker">Konkrete Anwendungsfälle</p><h2 id="use-cases-heading">Weniger Aufwand für <span className="gradient-text">mehr Wirkung.</span></h2></div><p className="section-intro">Praxisnahe Digitalisierung und Automatisierung dort, wo sie im Unternehmen sofort Zeit spart und Abläufe zuverlässig verbessert.</p></div>
         <div className="use-cases-grid">
-          <article className="use-case"><span>01</span><h3>Intelligente E-Mail-Verarbeitung</h3><p>Eingehende Anfragen automatisch erkennen, sortieren und an die richtige Stelle weiterleiten, damit keine Information liegen bleibt.</p></article>
-          <article className="use-case"><span>02</span><h3>Automatisierte Dokumentenprüfung</h3><p>Dokumente strukturiert auslesen, wichtige Inhalte prüfen und Daten ohne manuelle Übertragung in bestehende Systeme übernehmen.</p></article>
-          <article className="use-case"><span>03</span><h3>Digitale Abläufe im Team</h3><p>Wiederkehrende Aufgaben verbinden und übersichtlich abbilden, damit Mitarbeitende weniger suchen und schneller handeln.</p></article>
+          <article className="use-case"><span>01</span><h3>Intelligente E-Mail-Sortierung</h3><p>Die KI kategorisiert E-Mails, priorisiert wichtige Anliegen und erstellt passende Antwortentwürfe.</p></article>
+          <article className="use-case"><span>02</span><h3>Automatisiertes Lead-Routing</h3><p>Neue Web-Leads werden im CRM angelegt und sofort an das zuständige Vertriebsteam weitergeleitet.</p></article>
+          <article className="use-case"><span>03</span><h3>Digitale Belegerfassung</h3><p>Rechnungsdaten aus PDFs automatisch auslesen, strukturieren und an die Buchhaltung übergeben.</p></article>
+          <article className="use-case"><span>04</span><h3>Nahtloses Kunden-Onboarding</h3><p>Projektboards, Kundenordner und Willkommensunterlagen automatisch erstellen und versenden.</p></article>
+          <article className="use-case"><span>05</span><h3>Preflight-Checks für Dokumente</h3><p>Dokumente automatisiert auf Richtlinien, Vollständigkeit und relevante Vorgaben prüfen.</p></article>
+          <article className="use-case"><span>06</span><h3>Proaktives System-Monitoring</h3><p>Zahlungen, Fristen und Abläufe überwachen und das zuständige Team bei Abweichungen informieren.</p></article>
         </div>
       </section>
       {showWorkflowDemo && (
