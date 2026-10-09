@@ -39,6 +39,28 @@ export default function ImpressumPage() {
         </section>
 
         <section>
+          <h2>Datenschutz</h2>
+          <p>
+            Verantwortlicher für die Verarbeitung personenbezogener Daten auf dieser Website ist der oben genannte Anbieter.
+          </p>
+          <h3>Hosting</h3>
+          <p>
+            Diese Website wird bei Hetzner gehostet. Beim Aufruf der Website können technisch erforderliche Zugriffsdaten wie IP-Adresse, Datum und Uhrzeit sowie aufgerufene Seiten in Server-Logdateien verarbeitet werden. Die Verarbeitung erfolgt zur sicheren und stabilen Bereitstellung der Website.
+          </p>
+          <h3>Reichweitenmessung mit Umami</h3>
+          <p>
+            Zur datenschutzfreundlichen Reichweitenmessung setzen wir Umami ein. Umami arbeitet ohne Cookies und erstellt keine persönlichen Nutzerprofile. Die Auswertung erfolgt auf Grundlage anonymisierter oder aggregierter Nutzungsdaten, um die Website technisch und inhaltlich zu verbessern.
+          </p>
+          <p>
+            Eine Weitergabe an Dritte zu Werbezwecken findet nicht statt. Personenbezogene Daten werden nur verarbeitet, soweit dies zur Bereitstellung der Website, zur Sicherheit des Betriebs oder aufgrund einer gesetzlichen Verpflichtung erforderlich ist.
+          </p>
+          <h3>Ihre Rechte</h3>
+          <p>
+            Sie haben im Rahmen der gesetzlichen Vorschriften das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch gegen die Verarbeitung. Für Fragen zum Datenschutz können Sie sich an die oben genannte E-Mail-Adresse wenden.
+          </p>
+        </section>
+
+        <section>
           <h2>Hinweis</h2>
           <p>Die Angaben auf dieser Seite sind Platzhalter und müssen vor der Veröffentlichung mit den vollständigen ladungsfähigen Kontaktdaten ergänzt werden.</p>
         </section>
