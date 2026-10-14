@@ -33,7 +33,7 @@ export default function ImpressumPage() {
         <section>
           <h2>Kontakt</h2>
           <p>
-            E-Mail: <a href="mailto:hello@miron.app">hello@miron.app</a><br />
+            E-Mail: <a href="mailto:hello@miron.app" data-umami-event="click-email" data-umami-event-location="impressum">hello@miron.app</a><br />
             Telefon: [optional ergänzen]
           </p>
         </section>
