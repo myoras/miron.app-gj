@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -41,7 +42,11 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        <script defer src="https://data.miron.app/script.js" data-website-id="75f32a8b-3179-49a0-96ab-1d825aeb7122" />
+        <Script
+          src="https://data.miron.app/script.js"
+          data-website-id="75f32a8b-3179-49a0-96ab-1d825aeb7122"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="antialiased">
         {children}
