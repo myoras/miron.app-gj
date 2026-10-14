@@ -40,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <script defer src="https://data.miron.app/script.js" data-website-id="75f32a8b-3179-49a0-96ab-1d825aeb7122" />
+      </head>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
