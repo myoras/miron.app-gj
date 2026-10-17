@@ -10,15 +10,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/miron-logo-dark.svg',
+        type: 'image/svg+xml',
+      },
+      {
+        url: '/miron-logo-light.svg',
         media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
