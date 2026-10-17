@@ -9,7 +9,7 @@ import {
   Workflow,
 } from 'lucide-react'
 
-const showWorkflowDemo = true
+const showWorkflowDemo = false
 
 const services = [
   {
